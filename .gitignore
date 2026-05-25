@@ -21,8 +21,11 @@ dist/
 target/
 *.class
 
+
+
 # 关键：忽略包含密钥的配置文件
 **/application-mail.yml
 
 # 可选：如果不想上传大的 SQL 文件，可以取消下面一行的注释
-# snack_mall.sql
+#snack_mall.sql
+#*.zip
