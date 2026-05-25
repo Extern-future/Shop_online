@@ -1,0 +1,29 @@
+spring:
+  mail:
+    host: smtp.163.com # 发件服务器
+    username: your_email@163.com # 发件邮箱地址（改成你自己的）
+    password: your_email_authorization_code # 邮箱客户端授权码（占位符）
+    properties.mail.smtp.port: 994 # 465 或 994
+    nickname: 你的昵称 # 邮箱发件昵称
+    properties.mail.smtp.starttls.enable: true
+    properties.mail.smtp.starttls.required: true
+    properties.mail.smtp.ssl.enable: true
+    default-encoding: utf-8
+
+sms:
+  aliyun:
+    accessKeyID: your_aliyun_access_key_id # 阿里云AccessKey ID（占位符）
+    accessKeySecret: your_aliyun_access_key_secret # 阿里云AccessKey Secret（占位符）
+    domain: dysmsapi.aliyuncs.com
+    regionId: cn-hangzhou
+    templateCode: SMS_xxxxxxxxx # 你的短信模板ID
+    signName: 你的短信签名 # 短信签名
+
+oss:
+  bucketName: your_bucket_name # OSS存储桶名称
+  accessKeyId: your_aliyun_oss_access_key_id # OSS的AccessKey ID（占位符）
+  accessKeySecret: your_aliyun_oss_access_key_secret # OSS的AccessKey Secret（占位符）
+  # OSS region
+  endpoint: oss-cn-hangzhou.aliyuncs.com
+  bucket: https://your-bucket.oss-cn-beijing.aliyuncs.com
+  fileHost: https://your-bucket.oss-cn-hangzhou.aliyuncs.com/

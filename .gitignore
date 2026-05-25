@@ -1,0 +1,28 @@
+# 日志文件
+*.log
+springboot/log/
+
+# IDE 配置
+.idea/
+*.iml
+.vscode/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 前端依赖和构建
+node_modules/
+dist/
+.temp/
+.cache/
+
+# 后端编译
+target/
+*.class
+
+# 关键：忽略包含密钥的配置文件
+**/application-mail.yml
+
+# 可选：如果不想上传大的 SQL 文件，可以取消下面一行的注释
+# snack_mall.sql
